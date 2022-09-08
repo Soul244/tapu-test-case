@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { faThList, faUser } from '@fortawesome/free-solid-svg-icons'
+import { Outlet } from 'react-router-dom'
+import { Navbar, NavbarList, NavbarListItem } from './layout/Navbar'
+import { ROUTES } from './routes'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <main>
+      <Outlet></Outlet>
+      <Navbar>
+        <NavbarList>
+          <NavbarListItem icon="list" title="List" to={ROUTES.LIST}></NavbarListItem>
+          <NavbarListItem icon="account" title="Account" to={ROUTES.ACCOUNT}></NavbarListItem>
+        </NavbarList>
+      </Navbar>
+    </main>
+  )
 }
 
-export default App;
+export default App
