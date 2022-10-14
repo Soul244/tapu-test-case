@@ -1,7 +1,6 @@
-import React from 'react'
 import styled from 'styled-components'
 
-const NavbarStyled = styled.nav`
+export const Navbar = styled.nav`
   position: fixed;
   bottom: 0;
   left: 0;
@@ -9,9 +8,3 @@ const NavbarStyled = styled.nav`
   height: 88px;
   background: #fafafa;
 `
-
-function Navbar(props) {
-  return <NavbarStyled {...props}></NavbarStyled>
-}
-
-export default Navbar

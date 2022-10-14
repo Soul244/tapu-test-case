@@ -1,14 +1,12 @@
-import React from 'react'
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-const ContainerStyled = styled.div`
+export const Container = styled.div`
   width: 100%;
   padding-right: 24px;
   padding-left: 24px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 88px; /* Navbar Fix */
+  margin-bottom: calc(88px + 40px); /* Navbar Fix */
   @media (min-width: 576px) {
     max-width: 540px;
   }
@@ -25,11 +23,3 @@ const ContainerStyled = styled.div`
     max-width: 1320px;
   }
 `
-
-function Container(props) {
-  return <ContainerStyled {...props}></ContainerStyled>
-}
-
-Container.propTypes = {}
-
-export default Container

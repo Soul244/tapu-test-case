@@ -1,4 +1,4 @@
-import createMockData from '../../createMockData'
+import createMockData from 'createMockData'
 
 let initialProducts = JSON.parse(localStorage.getItem('products'))
 let initialBasket = JSON.parse(localStorage.getItem('basket')) || []

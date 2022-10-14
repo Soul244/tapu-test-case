@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Icon from '../Icon'
+import { Icon } from 'components/Icon'
 
 const Card = styled.div`
   display: flex;
@@ -75,7 +75,8 @@ const CardButton = styled.button`
   align-items: center;
   justify-content: center;
   align-self: flex-end;
-  color: #0078e3;
+  padding: 8px 16px;
+  color: ${(props) => props.color};
   cursor: pointer;
   font-weight: 700;
   font-size: 12px;

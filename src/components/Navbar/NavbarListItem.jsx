@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
-import Icon from '../Icon'
+
+import { Icon } from 'components/Icon'
 
 // To give a style for active link -> check documents https://reactrouter.com/en/main/components/nav-link
 const Container = styled.li`
@@ -41,7 +42,7 @@ const IconStyled = styled(Icon)`
   font-size: 24px;
 `
 
-function NavbarListItem({ icon, title, to, ...rest }) {
+export function NavbarListItem({ icon, title, to, ...rest }) {
   return (
     <Container {...rest}>
       <NavLinkStyled to={to}>
@@ -53,5 +54,4 @@ function NavbarListItem({ icon, title, to, ...rest }) {
 }
 
 NavbarListItem.propTypes = {}
-
-export default NavbarListItem
+// TODO: add proptypes

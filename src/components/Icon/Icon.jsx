@@ -1,13 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import { IconStyled } from './styles'
 
-const IconStyled = styled.i`
-  color: ${(props) => props.color};
-  font-size: ${(props) => props.size};
-`
-
-function Icon({ name, size, color, className }) {
+export function Icon({ name, size, color, className }) {
   return <IconStyled className={`${className} icon-${name}`} size={size} color={color}></IconStyled>
 }
 
@@ -16,5 +11,3 @@ Icon.propTypes = {
   size: PropTypes.string,
   color: PropTypes.string,
 }
-
-export default Icon
