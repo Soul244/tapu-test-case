@@ -1,20 +1,21 @@
-import React, { Fragment, useMemo } from 'react'
+import React, { Fragment, useContext } from 'react'
 import ProductCard from '../components/ProductCard'
 import HrItem from '../components/HrItem'
+import { AppContext } from '../contexts/AppContext'
 
-function List(props) {
-  const data = useMemo(() => [1, 2, 3, 4], [])
+function List() {
+  const appContext = useContext(AppContext)
   return (
     <>
-      {data.map((item) => (
-        <Fragment key={item}>
+      {appContext.listState.products.map((product) => (
+        <Fragment key={product.id}>
           <ProductCard
-            img={require('../assets/images/mock_product.png')}
-            title="Villa Bosphorus"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-            star={5}
-            distance={3.7}
-            price={20000}
+            img={product.img}
+            title={product.title}
+            description={product.description}
+            star={product.star}
+            distance={product.distance}
+            price={product.price}
             onClick={() => {}}
           ></ProductCard>
           <HrItem></HrItem>

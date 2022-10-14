@@ -1,0 +1,6 @@
+const ACTIONS = {
+  ADD_BASKET: 'ADD_BASKET',
+  REMOVE_BASKET: 'REMOVE_BASKET',
+}
+
+export default ACTIONS

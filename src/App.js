@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import { Outlet } from 'react-router-dom'
-import Container from './layout/Grid/Container'
-import { Navbar, NavbarList, NavbarListItem } from './layout/Navbar'
+import Container from './components/Grid/Container'
+import { Navbar, NavbarList, NavbarListItem } from './components/Navbar'
 import { ROUTES } from './routes'
 
 function App() {

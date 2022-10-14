@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
-import Icon from '../../components/Icon'
+import Icon from '../Icon'
 
 // To give a style for active link -> check documents https://reactrouter.com/en/main/components/nav-link
 const Container = styled.li`
