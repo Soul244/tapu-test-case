@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import Icon from './Icon'
+import { useTranslation } from 'react-i18next'
 
 const Card = styled.div`
   display: flex;
@@ -89,6 +90,7 @@ const ButtonIcon = styled(Icon)`
 `
 
 function ProductCard({ img, title, description, star, distance, price, onClick }) {
+  const { t } = useTranslation()
   return (
     <Card>
       <CardImage src={img} alt={title} />
@@ -115,7 +117,7 @@ function ProductCard({ img, title, description, star, distance, price, onClick }
         </CardDescriptionList>
         <CardButton type="button" onClick={onClick}>
           <ButtonIcon name="plus" size="16px"></ButtonIcon>
-          Sepete Ekle
+          {t('list.add_basket')}
         </CardButton>
       </CardBody>
     </Card>

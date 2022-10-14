@@ -1,0 +1,25 @@
+{
+  "login": {
+    "about": "Hakkında",
+    "login": "Giriş Yap",
+    "locale": "Dil",
+    "current_locale": "Şimdiki Dil",
+    "signup": "Kayıt Ol",
+    "logout": "Çıkış Yap",
+    "email": "E-posta",
+    "password": "Şifre"
+  },
+  "list": {
+    "add_basket": "Sepete Ekle",
+    "remove_basket": "Sepetten Çıkar",
+    "price": "Fiyat",
+    "total_price_of_products": "Ürünlerin Toplamı",
+    "total": "Toplam",
+    "tax_and_shippment": "Vergi + Kargo",
+    "overall_total": "Genel Toplam"
+  },
+  "navbar": {
+    "list": "Liste",
+    "account": "Üyelik"
+  }
+}

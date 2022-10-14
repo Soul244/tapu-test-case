@@ -12,7 +12,7 @@ function Icon({ name, size, color, className }) {
 }
 
 Icon.propTypes = {
-  name: PropTypes.oneOf('minus', 'star', 'marker', 'plus', 'account', 'list').isRequired,
+  name: PropTypes.oneOf(['minus', 'star', 'marker', 'plus', 'account', 'list']).isRequired,
   size: PropTypes.string,
   color: PropTypes.string,
 }

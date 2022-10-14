@@ -1,0 +1,25 @@
+{
+  "login": {
+    "about": "About",
+    "login": "Login",
+    "locale": "Locale",
+    "current_locale": "Current Locale",
+    "signup": "Sign Up",
+    "logout": "Log Out",
+    "email": "E-mail",
+    "password": "Password"
+  },
+  "list": {
+    "add_basket": "Add to Basket",
+    "remove_basket": "Remove from Basket",
+    "price": "Price",
+    "total_price_of_products": "Total Price of Products",
+    "total": "Total Price",
+    "tax_and_shippment": "Tax + Shippment",
+    "overall_total": "Overall Total"
+  },
+  "navbar": {
+    "list": "List",
+    "account": "Account"
+  }
+}

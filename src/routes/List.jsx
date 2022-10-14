@@ -2,7 +2,7 @@ import React, { Fragment, useMemo } from 'react'
 import ProductCard from '../components/ProductCard'
 import HrItem from '../components/HrItem'
 
-function ProductList(props) {
+function List(props) {
   const data = useMemo(() => [1, 2, 3, 4], [])
   return (
     <>
@@ -24,6 +24,6 @@ function ProductList(props) {
   )
 }
 
-ProductList.propTypes = {}
+List.propTypes = {}
 
-export default ProductList
+export default List

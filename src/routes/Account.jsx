@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
+import { useTranslation } from 'react-i18next'
+import { changeLanguage } from 'i18next'
 
 const Form = styled.form`
   display: flex;
@@ -59,17 +61,26 @@ const Button = styled.button`
 `
 
 function Account(props) {
+  const [language, setLanguage] = useState('tr')
+
+  const { t } = useTranslation()
+
+  const handleLanguage = (e) => {
+    changeLanguage(e.target.value)
+    setLanguage(e.target.value)
+  }
+
   const handleLogin = () => {}
   return (
     <Form onSubmit={handleLogin}>
-      <H1>Account</H1>
-      <Input type="email" placeholder="E-mail" required />
-      <Input type="password" placeholder="Password" />
-      <Select name="locale" id="locale">
-        <option value="turkish">Turkish</option>
-        <option value="english">English</option>
+      <H1>{t('login.about')}</H1>
+      <Input type="email" placeholder={t('account.email')} required />
+      <Input type="password" placeholder={t('account.password')} />
+      <Select name="locale" id="locale" onChange={handleLanguage} value={language}>
+        <option value="tr">Turkish</option>
+        <option value="en">English</option>
       </Select>
-      <Button type="submit">Sign Up</Button>
+      <Button type="submit">{t('login.signup')}</Button>
     </Form>
   )
 }

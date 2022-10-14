@@ -4,8 +4,9 @@ import App from './App'
 import GlobalStyle from './globalStyle'
 // import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { ProductList, Account, ROUTES } from './routes'
+import { List, Account, ROUTES } from './routes'
 import './assets/fonts/fonts.css'
+import './translations/config'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -15,8 +16,8 @@ root.render(
       <Routes>
         <Route path="/" element={<App />}>
           <Route path={ROUTES.ACCOUNT} element={<Account />} />
-          <Route index element={<ProductList />} />
-          <Route path={ROUTES.LIST} element={<ProductList />} />
+          <Route index element={<List />} />
+          <Route path={ROUTES.LIST} element={<List />} />
           <Route
             path="*"
             element={
