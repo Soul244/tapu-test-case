@@ -1,7 +1,7 @@
 import React from 'react'
 
-import ProductList from 'containers/list/ProductList'
-import BasketTotal from 'containers/list/BasketTotal'
+import { ProductList } from 'containers/list/ProductList'
+import { BasketTotal } from 'containers/list/BasketTotal'
 
 function List() {
   return (

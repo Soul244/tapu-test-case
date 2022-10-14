@@ -5,7 +5,7 @@ const reducer = (state, action) => {
     case ACTIONS.LOGIN:
       return {
         ...state,
-        basket: action.payload.user,
+        user: action.payload.user,
       }
     case ACTIONS.LOGOUT:
       return {

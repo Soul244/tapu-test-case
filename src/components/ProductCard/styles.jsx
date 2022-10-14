@@ -20,6 +20,11 @@ const CardImage = styled.img`
   border-radius: 12px;
   object-fit: cover;
   filter: drop-shadow(0px 10px 15px #c8c9cd);
+  @media (min-width: 992px) {
+    height: 150px;
+    width: 150px;
+    min-width: 150px;
+  }
 `
 
 const CardTitle = styled.h2`

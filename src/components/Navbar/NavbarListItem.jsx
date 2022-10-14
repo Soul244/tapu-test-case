@@ -30,6 +30,10 @@ const NavLinkStyled = styled(NavLink)`
   line-height: 14px;
   letter-spacing: 0.04em;
   text-decoration: none;
+  @media (min-width: 992px) {
+    font-size: 18px;
+    line-height: 20px;
+  }
 `
 
 const Text = styled.span`
