@@ -14,8 +14,8 @@ function App() {
       </Container>
       <Navbar>
         <NavbarList>
-          <NavbarListItem icon="list" title={t('navbar.list')} to={ROUTES.LIST}></NavbarListItem>
-          <NavbarListItem icon="account" title={t('navbar.account')} to={ROUTES.ACCOUNT}></NavbarListItem>
+          <NavbarListItem iconName="list" title={t('navbar.list')} to={ROUTES.LIST}></NavbarListItem>
+          <NavbarListItem iconName="account" title={t('navbar.account')} to={ROUTES.ACCOUNT}></NavbarListItem>
         </NavbarList>
       </Navbar>
     </main>

@@ -26,7 +26,7 @@ root.render(
               path="*"
               element={
                 <main style={{ padding: '1rem' }}>
-                  <p>There's nothing here!</p>
+                  <p>404</p>
                 </main>
               }
             />
