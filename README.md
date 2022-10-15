@@ -1,4 +1,22 @@
-# Getting Started with Create React App
+# Hasan'ın Proje Hakkındaki Notları
+
+    * Create React App ile proje başlatıldı.
+    * Login ekranında herhangi bir işlevsellik yok. Herhangi bir ad ve şifre girerseniz ekrana yazacaktır. Ekrana yazılması ve global state'a kaydedilmesi dışında bir işleve sahip değildir.
+    * Listeleme ekranındaki veriler uygulamayı çalıştırdığınızda faker js ile oluşturulup, local storage'a kaydedilecektir. Bir api bağlantısı yok
+    * Testleri hala yazmaya çalışıyorum. Şu an için sadece 1 adet test olmalı projeyi açtığınızda.
+    * Desktop için çok yoğun bir çalışma yürütmedim. Ufak tefek değişiklikler var sadece mobile'a göre.
+    * Typescript kullanmadım. Proptypes kullandım.
+    
+## Kullanılan Teknolojiler:
+   * React
+   * Context Api ve Reducer
+   * Styled Components
+   * React Router v6
+   * react-i18next  
+   * faker.js
+   * Proptypes
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
