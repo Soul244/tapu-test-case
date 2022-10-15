@@ -3,15 +3,11 @@ import styled from 'styled-components'
 const Form = styled.form`
   display: flex;
   flex-direction: column;
-`
-
-const H1 = styled.h1`
-  margin: 0 0 30px 0;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 42px;
-  letter-spacing: 0.1px;
-  color: #121212;
+  @media (min-width: 992px) {
+    height: auto;
+    max-width: 650px;
+    margin: 0 auto;
+  }
 `
 
 const Input = styled.input`
@@ -29,4 +25,4 @@ const Input = styled.input`
   }
 `
 
-export { Form, H1, Input }
+export { Form, Input }

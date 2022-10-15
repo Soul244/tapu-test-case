@@ -1,10 +1,11 @@
 import React, { useContext, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Form, H1, Input } from './styles'
+import { Form, Input } from './styles'
 import { AppContext } from 'contexts/AppContext'
 import ACTIONS from 'reducers/user/actions'
 import { LanguageSelect } from '../LanguageSelect'
 import { Button } from 'components/Button'
+import { H1 } from 'components/Typography'
 
 export function Login() {
   const [formData, setFormData] = useState({

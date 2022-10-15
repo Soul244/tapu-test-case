@@ -29,6 +29,10 @@ const ButtonStyled = styled.button`
   &:disabled {
     background: #bbc3cf;
   }
+  @media (min-width: 992px) {
+    align-self: flex-end;
+    width: 35%;
+  }
 `
 
 export { ButtonStyled }

@@ -7,16 +7,15 @@ const Wrapper = styled.div`
   height: calc(100vh - (88px + 40px + 40px));
   @media (min-width: 992px) {
     height: auto;
+    max-width: 650px;
+    margin: 0 auto;
   }
 `
 
-const H1 = styled.h1`
-  margin: 0 0 30px 0;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 42px;
-  letter-spacing: 0.1px;
-  color: #121212;
+const Text = styled.p`
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
 `
 
-export { Wrapper, H1 }
+export { Wrapper, Text }

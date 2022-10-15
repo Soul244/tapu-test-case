@@ -1,11 +1,10 @@
-import React from 'react'
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 
 import { Icon } from 'components/Icon'
 
 // To give a style for active link -> check documents https://reactrouter.com/en/main/components/nav-link
-const Container = styled.li`
+const Wrapper = styled.li`
   width: 100%;
   height: 100%;
   .active {
@@ -46,16 +45,4 @@ const IconStyled = styled(Icon)`
   font-size: 24px;
 `
 
-export function NavbarListItem({ icon, title, to, ...rest }) {
-  return (
-    <Container {...rest}>
-      <NavLinkStyled to={to}>
-        <IconStyled name={icon}></IconStyled>
-        <Text>{title}</Text>
-      </NavLinkStyled>
-    </Container>
-  )
-}
-
-NavbarListItem.propTypes = {}
-// TODO: add proptypes
+export { Wrapper, NavLinkStyled, Text, IconStyled }
