@@ -6,6 +6,7 @@ export const Container = styled.div`
   padding-left: 24px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 40px;
   margin-bottom: calc(88px + 40px); /* Navbar Fix */
   @media (min-width: 576px) {
     max-width: 540px;

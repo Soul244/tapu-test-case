@@ -1,4 +1,5 @@
 import ACTIONS from './actions'
+import initialData from './initialData'
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -8,10 +9,7 @@ const reducer = (state, action) => {
         user: action.payload.user,
       }
     case ACTIONS.LOGOUT:
-      return {
-        ...state,
-        user: {},
-      }
+      return initialData
     default:
       return state
   }

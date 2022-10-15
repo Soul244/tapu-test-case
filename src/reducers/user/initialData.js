@@ -1,5 +1,8 @@
 const initialData = {
-  user: {},
+  user: {
+    name: '',
+    password: ''
+  },
 }
 
 export default initialData

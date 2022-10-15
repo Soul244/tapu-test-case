@@ -3,7 +3,7 @@ import React, { useContext } from 'react'
 import { AppContext } from 'contexts/AppContext'
 import { ProductListItem } from 'containers/list/ProductListItem'
 
-export function List() {
+export function ProductList() {
   const { listState } = useContext(AppContext)
 
   return (
